@@ -14,6 +14,7 @@ header {
     background: #f4f4f4;
     text-align: center;
     padding: 2em;
+    margin-bottom: 50px;
 }
 
 header img {
@@ -24,7 +25,8 @@ header h1 {
     font-size: 2.5em;
 }
 
-h1,h2 {
+h1,
+h2 {
     text-align: center;
 }
 
@@ -47,14 +49,75 @@ footer {
     text-align: center;
     color: #fff;
     background: #f76c6c;
-    padding: 0.25em 0;
+    padding-top: 20px;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-.btn-btn{
-    border-radius: 10px;
-    border: 1px solid #000;
-    padding: 5px 10px;
+.btn-btn {
+    background: #f76c6c;
+    color: #fff;
+    padding: 12px 36px;
+    border: none;
+    border-radius: 40px;
+    margin: 30px 0 0 100px;
+}
+
+.new-member-form {
+    height: auto;
+    width: 350px;
+    border: none;
+    border-bottom: 2px solid silver;
+    font-size: 17px;
+    text-align: left;
+    padding: 0 0 3px 18px;
+}
+
+.new-member-form:focus {
+    outline: none;
+}
+
+
+.new-member-form ::placeholder {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    color: grey;
+    pointer-events: none;
+}
+
+.separate {
+    width: 250px;
+    height: 5px !important;
+    background: #f76c6c;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    opacity: 0.8;
+    border-radius: 40px;
+}
+
+.member-list {
+    margin-top: 50px;
+}
+
+.table {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin: 100px 0 100px 150px;
+}
+
+.form-block {
+    min-height: 600px;
+}
+
+@media screen and (max-width: 800px) {
+    form {
+        display: block;
+        margin: 70px 0 70px 70px;
+    }
 }

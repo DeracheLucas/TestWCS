@@ -14,26 +14,31 @@
 <!-- Main section -->
 <main>
 
-    {% dump %}
-
     <h2>Ajouter un(e) Argonaute</h2>
-    {{form_start(form)}}
-    {{form_widget(form.nom)}}
-    {# {{form_widget(form.save)}} #}
-    {{form_end(form)}}
+    <hr class="separate">
+        <div >
+            {{form_start(form)}}
+            {{form_widget(form.nom)}}
+            {# {{form_widget(form.save)}} #}
+            {{form_end(form)}}
+        </div>
 
     <!-- Member list -->
+
     <h2>Membres de l'équipage</h2>
-    <section class="member-list container row">
-        {% for membre in membres %}
-            <div id="{{membre.id}}" class="col-4 col-lg-4 col-sm-4">
-                {{membre.nom}}
-            </div>
-        {% endfor %}
-    </section>
+    <hr class="separate">
+    <div class="table">
+        <section class="member-list container row">
+            {% for membre in membres %}
+                <div id="{{membre.id}}" class="col-4 col-lg-4 col-md-4">
+                    {{membre.nom}}
+                </div>
+            {% endfor %}
+        </section>
+    </div>
 </main>
 
 <footer>
-    <p>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
+    <p>Réalisé par Jason en Anthestérion et Derache Lucas de l'an 515 avant JC à 2022 après JC</p>
 </footer>
 {% endblock %}
